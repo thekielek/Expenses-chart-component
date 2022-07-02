@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Expenses chart component</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
+  </head>
+  <body>
+    <section class="header">
+      <div class="header__list">
+        <p class="header__item header__item--first">My balance</p>
+        <p class="header__item header__item--second">$921.48</p>
+      </div>
+      <svg
+        width="72"
+        height="48"
+        viewBox="0 0 72 48"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g fill="none" fill-rule="evenodd">
+          <circle fill="#382314" cx="48" cy="24" r="24" />
+          <circle stroke="#FFF" stroke-width="2" cx="24" cy="24" r="23" />
+        </g>
+      </svg>
+    </section>
+    <section class="card">
+      <h2 class="card__title">Spending - Last 7 days</h2>
+      <table id="my-chart" class="charts-css column data-spacing-4 show-labels">
+        <tbody>
+          <tr id="motion-effect">
+            <th scope="row">mon</th>
+            <td>
+              <span class="tooltip"></span>
+            </td>
+          </tr>
+          <tr id="motion-effect">
+            <th scope="row">tue</th>
+            <td>
+              <span class="tooltip"></span>
+            </td>
+          </tr id="motion-effect">
+          <tr id="motion-effect">
+            <th scope="row">wed</th>
+            <td><span class="tooltip"></span></td>
+          </tr>
+          <tr id="motion-effect">
+            <th scope="row">thu</th>
+            <td><span class="tooltip"></span></td>
+          </tr>
+          <tr id="motion-effect">
+            <th scope="row">fri</th>
+            <td><span class="tooltip"></span></td>
+          </tr>
+          <tr id="motion-effect">
+            <th scope="row">sat</th>
+            <td><span class="tooltip"></span></td>
+          </tr>
+          <tr id="motion-effect">
+            <th scope="row">sun</th>
+            <td><span class="tooltip"></span></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="border"></div>
+      <div class="summary">
+      <div class="summary__list">
+        <p class="summary__item summary__item--first" >Total this month</p>
+        <p class="summary__item summary__item--second"></p>
+      </div>
+      <div class="lastmonth">
+        <p class="lastmonth__item lastmonth__item--first" >3.5%</p>
+        <p class="lastmonth__item lastmonth__item--second">Total last month</p>
+      </div>
+    </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
