@@ -29,5 +29,5 @@ const getAmount = (amountData) => {
     // summaryAmount = summaryAmount + amountData[i].amount;
   });
 
-  summary.textContent = summaryAmount;
+  summary.textContent = `$${summaryAmount}`;
 };
