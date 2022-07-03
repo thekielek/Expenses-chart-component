@@ -20,6 +20,7 @@ const getAmount = (amountData) => {
 
   toolTips.forEach((toolTip, i) => {
     toolTip.textContent = amountData[i].amount;
+    console.log(amountData[i].amount);
     let columntValue = amountData[i].amount / 100;
     tdStyles[i].style = `--size: ${columntValue}`;
     summaryAmount = summaryAmount + amountData[i].amount;
@@ -27,5 +28,3 @@ const getAmount = (amountData) => {
 
   summary.textContent = summaryAmount;
 };
-
-getAmount();
