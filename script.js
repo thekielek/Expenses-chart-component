@@ -23,7 +23,10 @@ const getAmount = (amountData) => {
     console.log(amountData[i].amount);
     let columntValue = amountData[i].amount / 100;
     tdStyles[i].style = `--size: ${columntValue}`;
-    summaryAmount = summaryAmount + amountData[i].amount;
+    summaryAmount = amountData.reduce((a, b) => a + b.amount, 0);
+    console.log(amountData);
+
+    // summaryAmount = summaryAmount + amountData[i].amount;
   });
 
   summary.textContent = summaryAmount;
