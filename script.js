@@ -8,7 +8,7 @@ const getAmount = (amountData) => {
   const toolTips = [...document.querySelectorAll(".tooltip")];
   const tdStyles = [...document.querySelectorAll("td")];
   const summary = document.querySelector(".summary__item--second");
-  let summaryAmount = 0;
+  let summaryAmount;
 
   // for (let i = 0; i < toolTip.length; i++) {
   //   toolTip[i].textContent = amountData[i].amount;
